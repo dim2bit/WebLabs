@@ -1,0 +1,87 @@
+body {
+  background-color: #992;
+}
+
+.contents {
+  overflow: hidden;
+  background-color: grey;
+}
+
+.contents a {
+  float: left;
+  color: #f2f2f2;
+  padding: 10px 14px;
+  text-decoration: none;
+  font-size: 19px;
+}
+
+.contents a:hover {
+  background-color: #ddd;
+  color: black
+}
+
+.audio {
+  overflow: hidden;
+  background-color: grey;
+}
+
+.audio a {
+  float: left;
+  color: #f2f2f2;
+  padding: 10px 14px;
+  text-decoration: none;
+  font-size: 19px;
+}
+
+.audio a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.video {
+  overflow: hidden;
+  background-color: grey;
+}
+
+.video a {
+  float: left;
+  color: #f2f2f2;
+  padding: 10px 14px;
+  text-decoration: none;
+  font-size: 19px;
+}
+
+.video a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.marks {
+  overflow: hidden;
+  background-color: grey;
+}
+
+.marks a {
+  float: left;
+  color: #f2f2f2;
+  padding: 10px 14px;
+  text-decoration: none;
+  font-size: 19px;
+}
+
+.marks a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 50%;
+}
+
+td, th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+
