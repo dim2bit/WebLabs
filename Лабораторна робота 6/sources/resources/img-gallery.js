@@ -2,7 +2,7 @@ let fullScreen = false;
 let current_image = null;
 class Gallery extends HTMLElement {
   constructor() {
-	super();
+    super();
 
 	const shadow = this.attachShadow({mode: 'open'});
 
@@ -60,8 +60,8 @@ class Gallery extends HTMLElement {
 customElements.define('img-gallery', Gallery);
 
 function placeholder_func(placeholder) {
-	placeholder.setAttribute("src", "resources/placeholder.jpg");
-	placeholder.setAttribute("onclick", null)
+  placeholder.setAttribute("src", "resources/placeholder.jpg");
+  placeholder.setAttribute("onclick", null)
 }
 function toggle(image) {
   if (fullScreen) {
