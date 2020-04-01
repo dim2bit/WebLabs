@@ -3,9 +3,7 @@ let current_image = null;
 class Gallery extends HTMLElement {
   constructor() {
     super();
-
 	const shadow = this.attachShadow({mode: 'open'});
-
 	const st = document.createElement('style');
 	st.innerHTML = `
 	#img-gallery {
