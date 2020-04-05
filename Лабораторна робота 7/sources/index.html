@@ -1,1 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Лендінг</title>
+  <link rel="stylesheet" href="resources/style.css">
+</head>
+<body>
+  <header>
+    <div class="head">
+      <img src="resources/Crios.png" style="width: 20vw;">
+    </div>
+    <div class="pics">
+      <img src="resources/Title.png" style="width: 30vw;">
+    </div>
+  </header>
+  <div class="buttons">
+    <div class="button">
+      <a href="#box_1"><img src="resources/but_1.png"></a>
+    </div>
+    <div class="button">
+      <a href="#screen_app">
+        <img src="resources/but_2.png">
+      </a>
+    </div>
+    <div class="button">
+      <a href="#John_Doe">
+        <img src="resources/but_3.png">
+      </a>
+    </div>
+    <div class="button">
+      <a href="#Footer">
+        <img src="resources/but_4.png">
+      </a>
+    </div>
+  </div>
+  <div class="pics">
+    <a name="box_1">
+      <img src="resources/box_1.png" style="width: 98.9vw;">
+    </a>
+    <img src="resources/box_2.png" style="width: 98.9vw;">
+    <a name="screen_app">
+      <img src="resources/screen_app_1.png" style="width: 98.9vw;">
+    </a>
+    <img src="resources/screen_app_2.png" style="width: 95vw;">
+    <a name="John_Doe">
+      <img src="resources/John_Doe.png" style="width: 98.9vw;">
+    </a>
+  </div>
+  <header><h3>Форма</h3></header>
+  <form>
+    <input type="text" id="txt_1" placeholder="Ім'я" onkeyup='saveValue(this);'><Br />
+    <input type="text" id="txt_2" placeholder="Прізвище" onkeyup='saveValue(this);'><Br />
+    <input type="email" id="txt_3" placeholder="Пошта" onkeyup='saveValue(this);'><Br />
+    <input type="text" id="txt_4" placeholder="Номер телефону" onkeyup='saveValue(this);'><Br />
+    <input type="password" id="txt_5" placeholder="Пароль" onkeyup='saveValue(this);'><Br /><Br />
+    <button onclick="alert('Ваша форма відправлена')">Відправити</button>
+  </form>
+  <script type="text/javascript">
+    document.getElementById("txt_1").value = getSavedValue("txt_1");   
+    document.getElementById("txt_2").value = getSavedValue("txt_2");
+    document.getElementById("txt_3").value = getSavedValue("txt_3");
+    document.getElementById("txt_4").value = getSavedValue("txt_4");
+    document.getElementById("txt_5").value = getSavedValue("txt_5");
 
+    function saveValue(e) {
+        var id = e.id;  
+        var val = e.value; 
+        localStorage.setItem(id, val);
+    }
+
+    function getSavedValue  (v) {
+        if (!localStorage.getItem(v)) {
+            return "";
+        }
+        return localStorage.getItem(v);
+    }
+  </script>
+  <footer autocomplete="off">
+    <a name="Footer">
+      <div class="pics">
+        <img src="resources/Footer.png" style="width: 98.9vw;">
+      </div>
+    </a>
+  </footer>
+</body>
+</html>
