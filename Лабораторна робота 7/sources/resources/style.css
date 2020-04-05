@@ -5,10 +5,10 @@
 }
 
 .buttons {
-    margin-top: 3vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  margin-top: 3vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .button {
@@ -16,9 +16,9 @@
 }
 
 .pics {
-    margin-top: 5vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  margin-top: 5vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
