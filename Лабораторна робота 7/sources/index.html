@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Лендінг</title>
+  <link rel="icon" href="resources/snowflake-icon.png">
   <link rel="stylesheet" href="resources/style.css">
 </head>
 <body>
@@ -10,45 +11,62 @@
     <div class="head">
       <img src="resources/Crios.png" style="width: 20vw;">
     </div>
-    <div class="pics">
-      <img src="resources/Title.png" style="width: 30vw;">
-    </div>
   </header>
   <div class="buttons">
     <div class="button">
-      <a href="#box_1"><img src="resources/but_1.png"></a>
+      <a href="#box_1">
+        <img src="resources/but_1.png">
+        <div class="button_text">Розділ №1</div>
+      </a>
+    </div>
+    <div class="button">
+      <a href="#box_2">
+        <img src="resources/but_2.png">
+        <div class="button_text">Розділ №2</div>
+      </a>
     </div>
     <div class="button">
       <a href="#screen_app">
-        <img src="resources/but_2.png">
+        <img src="resources/but_3.png">
+        <div class="button_text">Розділ №3</div>
       </a>
     </div>
     <div class="button">
       <a href="#John_Doe">
-        <img src="resources/but_3.png">
-      </a>
-    </div>
-    <div class="button">
-      <a href="#Footer">
         <img src="resources/but_4.png">
+        <div class="button_text">Розділ №4</div>
       </a>
     </div>
   </div>
   <div class="pics">
-    <a name="box_1">
-      <img src="resources/box_1.png" style="width: 98.9vw;">
-    </a>
-    <img src="resources/box_2.png" style="width: 98.9vw;">
-    <a name="screen_app">
-      <img src="resources/screen_app_1.png" style="width: 98.9vw;">
-    </a>
-    <img src="resources/screen_app_2.png" style="width: 95vw;">
-    <a name="John_Doe">
-      <img src="resources/John_Doe.png" style="width: 98.9vw;">
-    </a>
+    <div class="box">
+      <a name="box_1">
+        <img src="resources/box_1.png" style="width: 100vw;">
+      </a>
+      <div class="box_1_text">Розділ №1</div>
+    </div>
+    <div class="box">
+      <a name="box_2">
+        <img src="resources/box_2.png" style="width: 100vw;">
+      </a>
+      <div class="box_2_text">Розділ №2</div>
+    </div>
+    <div class="box">
+      <a name="screen_app">
+        <img src="resources/screen_app_1.png" style="width: 49vw;">
+      </a>
+      <img src="resources/screen_app_2.png" style="width: 49vw;">
+      <div class="screen_app_text">Розділ №3</div>
+    </div>
+    <div class="box">
+      <a name="John_Doe">
+        <img src="resources/John_Doe.png" style="width: 100vw;">
+      </a>
+      <div class="box_1_text">Розділ №4</div>
+    </div>
   </div>
-  <header><h3>Форма</h3></header>
-  <form>
+  <header style="margin: 1vw;"><h3>Форма</h3></header>
+  <form style="margin: 1vw;"> 
     <input type="text" id="txt_1" placeholder="Ім'я" onkeyup='saveValue(this);'><Br />
     <input type="text" id="txt_2" placeholder="Прізвище" onkeyup='saveValue(this);'><Br />
     <input type="email" id="txt_3" placeholder="Пошта" onkeyup='saveValue(this);'><Br />
@@ -77,11 +95,9 @@
     }
   </script>
   <footer autocomplete="off">
-    <a name="Footer">
-      <div class="pics">
-        <img src="resources/Footer.png" style="width: 98.9vw;">
-      </div>
-    </a>
+    <div class="pics">
+      <img src="resources/Footer.png" style="width: 100vw;">
+    </div>
   </footer>
 </body>
 </html>
